@@ -1,4 +1,4 @@
-package proiect.spring.proiectpa.DBInteraction;
+package com.example.proiectpa.DBInteraction;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

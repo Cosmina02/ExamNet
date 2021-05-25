@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<h1>This is your test</h1>
+<form method="post">
+<!--    &lt;!&ndash;/*@thymesVar id="question" type="text"*/&ndash;&gt;
+    <div>
+        <p th:each="question:${questions}"  th:text="${question}"></p>
+        <ul>
+            &lt;!&ndash;/*@thymesVar id="allanswears" type="text"*/&ndash;&gt;
+            <li th:each="answear : ${allanswears}">
+                <input type="checkbox" th:value="${answear}"  />
+                &lt;!&ndash;/*@thymesVar id="answear" type="text"*/&ndash;&gt;
+                <label th:text="${answear}"></label>
+            </li>
+        </ul>
+    </div>-->
+
+
+    <!--/*@thymesVar id="question_text" type=""*/-->
+    <p th:each="question1:${questions1}" th:text="${question1.question_text}"></p>
+    <ul>
+
+        <li th:each="answear1 : ${questions1.answears}">
+            <input  type="checkbox"/>
+            <label th:text="${answear1}">  </label>
+        </li>
+    </ul>
+
+    <p th:each="question2:${questions2}" th:text="${question2.question_text}"></p>
+    <ul>
+
+        <li th:each="answear2 : ${questions2.answears}">
+            <!--/*@thymesVar id="answear" type=""*/-->
+            <input  type="checkbox"/>
+            <label th:text="${answear2}">  </label>
+        </li>
+    </ul>
+    <input type="submit" name="Submit your answears"/>
+</form>
+</body>
+</html>

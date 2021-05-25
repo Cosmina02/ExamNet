@@ -1,12 +1,13 @@
-package proiect.spring.proiectpa.xmlgenerator;
+package com.example.proiectpa.xmlgenerator;
 
+import com.example.proiectpa.DBInteraction.DBConnection;
+import com.example.proiectpa.DBInteraction.Queries;
 import org.jdom.Attribute;
 import org.jdom.Document;
 import org.jdom.Element;
 import org.jdom.output.Format;
 import org.jdom.output.XMLOutputter;
-import proiect.spring.proiectpa.DBInteraction.DBConnection;
-import proiect.spring.proiectpa.DBInteraction.Queries;
+
 
 import java.io.FileWriter;
 import java.io.IOException;

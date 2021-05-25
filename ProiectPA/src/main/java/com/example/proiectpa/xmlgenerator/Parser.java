@@ -1,9 +1,10 @@
-package proiect.spring.proiectpa.xmlgenerator;
+package com.example.proiectpa.xmlgenerator;
 
 import org.jdom.Document;
 import org.jdom.Element;
 import org.jdom.JDOMException;
 import org.jdom.input.SAXBuilder;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -30,7 +31,7 @@ public static StringBuilder ReadXML(){
                 Test.append("<label for=\"question"+id+"\">").append(question.getChildText(ans)).append("</label><br>\n");
             }
         }
-        Test.append("<input type=\"submit\" value=\"Submit\">").append("</form>");
+        Test.append("<input type=\"submit\" value=\"Submit\" onclick=\"submit()\">").append("</form>");
 
     } catch (IOException | JDOMException e) {
         e.printStackTrace();
