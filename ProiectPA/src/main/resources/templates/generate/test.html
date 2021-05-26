@@ -7,26 +7,13 @@
 <body>
 <h1>This is your test</h1>
 <form method="post">
-<!--    &lt;!&ndash;/*@thymesVar id="question" type="text"*/&ndash;&gt;
-    <div>
-        <p th:each="question:${questions}"  th:text="${question}"></p>
-        <ul>
-            &lt;!&ndash;/*@thymesVar id="allanswears" type="text"*/&ndash;&gt;
-            <li th:each="answear : ${allanswears}">
-                <input type="checkbox" th:value="${answear}"  />
-                &lt;!&ndash;/*@thymesVar id="answear" type="text"*/&ndash;&gt;
-                <label th:text="${answear}"></label>
-            </li>
-        </ul>
-    </div>-->
 
 
-    <!--/*@thymesVar id="question_text" type=""*/-->
-    <p th:each="question1:${questions1}" th:text="${question1.question_text}"></p>
+    <p th:each="question1:${questions1}" th:text="${question1.question_text}" name="question1"></p>
     <ul>
 
         <li th:each="answear1 : ${questions1.answears}">
-            <input  type="checkbox"/>
+            <input name="question1" type="checkbox"/>
             <label th:text="${answear1}">  </label>
         </li>
     </ul>
@@ -40,6 +27,85 @@
             <label th:text="${answear2}">  </label>
         </li>
     </ul>
+    <p th:each="question3:${questions3}" th:text="${question3.question_text}"></p>
+    <ul>
+
+        <li th:each="answear3 : ${questions3.answears}">
+            <!--/*@thymesVar id="answear" type=""*/-->
+            <input  type="checkbox"/>
+            <label th:text="${answear3}">  </label>
+        </li>
+    </ul>
+    <p th:each="question4:${questions4}" th:text="${question4.question_text}"></p>
+    <ul>
+
+        <li th:each="answear4 : ${questions4.answears}">
+            <!--/*@thymesVar id="answear" type=""*/-->
+            <input  type="checkbox"/>
+            <label th:text="${answear4}">  </label>
+        </li>
+    </ul>
+    <p th:each="question5:${questions5}" th:text="${question5.question_text}"></p>
+    <ul>
+
+        <li th:each="answear5 : ${questions5.answears}">
+            <!--/*@thymesVar id="answear" type=""*/-->
+            <input  type="checkbox"/>
+            <label th:text="${answear5}">  </label>
+        </li>
+    </ul>
+    <p th:each="question6:${questions6}" th:text="${question6.question_text}"></p>
+    <ul>
+
+        <li th:each="answear6 : ${questions6.answears}">
+            <!--/*@thymesVar id="answear" type=""*/-->
+            <input  type="checkbox"/>
+            <label th:text="${answear6}">  </label>
+        </li>
+    </ul>
+    <p th:each="question7:${questions7}" th:text="${question7.question_text}"></p>
+    <ul>
+
+        <li th:each="answear7 : ${questions7.answears}">
+            <!--/*@thymesVar id="answear" type=""*/-->
+            <input  type="checkbox"/>
+            <label th:text="${answear7}">  </label>
+        </li>
+    </ul>
+    <p th:each="question8:${questions8}" th:text="${question8.question_text}"></p>
+    <ul>
+
+        <li th:each="answear8 : ${questions8.answears}">
+            <!--/*@thymesVar id="answear" type=""*/-->
+            <input  type="checkbox"/>
+            <label th:text="${answear8}">  </label>
+        </li>
+    </ul>
+
+    <p th:each="question9:${questions9}" th:text="${question9.question_text}"></p>
+    <ul>
+
+        <li th:each="answear9 : ${questions9.answears}">
+            <!--/*@thymesVar id="answear" type=""*/-->
+            <input  type="checkbox"/>
+            <label th:text="${answear9}">  </label>
+        </li>
+    </ul>
+    <p th:each="question10:${questions10}" th:text="${question10.question_text}"></p>
+    <ul>
+
+        <li th:each="answear10 : ${questions10.answears}">
+            <!--/*@thymesVar id="answear" type=""*/-->
+            <input  type="checkbox"/>
+            <label th:text="${answear10}">  </label>
+        </li>
+    </ul>
+    <p th:text="${problema1}"></p>
+    <input type="text"/>
+
+    <p th:text="${problema2}"></p>
+    <input type="text"/>
+
     <input type="submit" name="Submit your answears"/>
 </form>
 </body>
