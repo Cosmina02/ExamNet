@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  xmlns:th="http://www.thymeleaf.org/">
 <head>
     <meta charset="UTF-8">
     <link th:href="@{/styles/styles.css}" rel="stylesheet">
@@ -8,7 +8,7 @@
 <body>
 <h1>Answears submited</h1>
 <p>You can find your answears and your test in the files below</p>
-<a th:href="@{../test.xml}">The Test</a>
-<a th:href="@{../answears.xml}">The Answears</a>
+<a th:href="@{/generate/xml/test}">The Test</a>
+<a th:href="@{/generate/xml/answears}">The Answears</a>
 </body>
 </html>

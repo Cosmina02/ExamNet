@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestAnswears>
+  <Question id="Q9">
+    <QuestionText>Care din urmatorele nume de fete sunt si nume de flori ?</QuestionText>
+  </Question>
+  <Question id="Q13">
+    <QuestionText>Cati pitici avea Cenusareasa ?</QuestionText>
+  </Question>
+  <Question id="Q12">
+    <QuestionText>Care animal este mamifer ?</QuestionText>
+  </Question>
+  <Question id="Q1">
+    <QuestionText>Care din urmatoarele figuri geometrice au 4 laturi ?</QuestionText>
+  </Question>
+  <Question id="Q21">
+    <QuestionText>Care din urmatoarele opere au fost scrise de Mircea Eliade?</QuestionText>
+  </Question>
+  <Question id="Q17">
+    <QuestionText>Care dintre urmatoarele tipuri de sortare au o complexitate medie O(n*log(n))?</QuestionText>
+  </Question>
+  <Question id="Q4">
+    <QuestionText>Care din urmatoarele figuri au toate laturile egale ?</QuestionText>
+  </Question>
+  <Question id="Q14">
+    <QuestionText>Cine a fost Alexandru Ioan Cuza ?</QuestionText>
+  </Question>
+  <Question id="Q10">
+    <QuestionText>Cate litere are alfabetul roman?</QuestionText>
+  </Question>
+  <Problem id="P2">
+    <ProblemText>Se dau numerele naturale n și k, unde k este o cifră. Să se verifice dacă toate cifrele lui n sunt mai mici sau egale decât k.</ProblemText>
+    <Answear />
+  </Problem>
+  <Problem id="P1">
+    <ProblemText>Să se scrie un program care citește numărul natural n și determină suma S=1+1*2+1*2*3+...+1*2*...*n.</ProblemText>
+    <Answear />
+  </Problem>
+</TestAnswears>
+

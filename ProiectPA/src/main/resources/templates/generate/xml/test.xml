@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Test>
+  <Question id="Q9">
+    <QuestionText>Care din urmatorele nume de fete sunt si nume de flori ?</QuestionText>
+    <Answer1Q9>Crina</Answer1Q9>
+    <Answer2Q9>Margareta</Answer2Q9>
+    <Answer3Q9>Lacramioara</Answer3Q9>
+    <Answer4Q9>Madalina</Answer4Q9>
+    <Answer5Q9>Maria</Answer5Q9>
+    <Answer6Q9>Larisa</Answer6Q9>
+    <Answer7Q9>Georgiana</Answer7Q9>
+    <Answer8Q9>Brandusa</Answer8Q9>
+    <Answer9Q9>Ana</Answer9Q9>
+  </Question>
+  <Question id="Q13">
+    <QuestionText>Cati pitici avea Cenusareasa ?</QuestionText>
+    <Answer1Q13>0</Answer1Q13>
+    <Answer2Q13>Niciunul</Answer2Q13>
+    <Answer3Q13>1</Answer3Q13>
+    <Answer4Q13>3</Answer4Q13>
+    <Answer5Q13>7</Answer5Q13>
+    <Answer6Q13>8</Answer6Q13>
+    <Answer7Q13>Pe toti</Answer7Q13>
+    <Answer8Q13>Unul si bun</Answer8Q13>
+    <Answer9Q13>Nu stiu</Answer9Q13>
+  </Question>
+  <Question id="Q12">
+    <QuestionText>Care animal este mamifer ?</QuestionText>
+    <Answer1Q12>Ariciul</Answer1Q12>
+    <Answer2Q12>Capra neagra</Answer2Q12>
+    <Answer3Q12>Lupul</Answer3Q12>
+    <Answer4Q12>Ursul</Answer4Q12>
+    <Answer5Q12>Gaina</Answer5Q12>
+    <Answer6Q12>Barza</Answer6Q12>
+    <Answer7Q12>Sarpele</Answer7Q12>
+    <Answer8Q12>Delfinul</Answer8Q12>
+    <Answer9Q12>Broasca testoasa</Answer9Q12>
+  </Question>
+  <Question id="Q1">
+    <QuestionText>Care din urmatoarele figuri geometrice au 4 laturi ?</QuestionText>
+    <Answer1Q1>Patrat</Answer1Q1>
+    <Answer2Q1>Cerc</Answer2Q1>
+    <Answer3Q1>Triunghi</Answer3Q1>
+    <Answer4Q1>Romb</Answer4Q1>
+    <Answer5Q1>Dreptunghi</Answer5Q1>
+    <Answer6Q1>Paralelogram</Answer6Q1>
+    <Answer7Q1>Hexagon</Answer7Q1>
+    <Answer8Q1>Dodecagon</Answer8Q1>
+    <Answer9Q1>Pentagon</Answer9Q1>
+    <Answer10Q1>Poligon</Answer10Q1>
+  </Question>
+  <Question id="Q21">
+    <QuestionText>Care din urmatoarele opere au fost scrise de Mircea Eliade?</QuestionText>
+    <Answer1Q21>Maitreyi</Answer1Q21>
+    <Answer2Q21>Romanul adolescentului miop</Answer2Q21>
+    <Answer3Q21>Noaptea de Sanziene</Answer3Q21>
+    <Answer4Q21>Domnisoara Christina</Answer4Q21>
+    <Answer5Q21>La tiganci</Answer5Q21>
+    <Answer6Q21>Pe culmile disperarii</Answer6Q21>
+    <Answer7Q21>Demiurgul cel rau</Answer7Q21>
+    <Answer8Q21>Despre neajunsul de a te fi nascut</Answer8Q21>
+  </Question>
+  <Question id="Q17">
+    <QuestionText>Care dintre urmatoarele tipuri de sortare au o complexitate medie O(n*log(n))?</QuestionText>
+    <Answer1Q17>Bubble Sort</Answer1Q17>
+    <Answer2Q17>Quick Sort</Answer2Q17>
+    <Answer3Q17>Insertion Sort</Answer3Q17>
+    <Answer4Q17>Heap Sort</Answer4Q17>
+    <Answer5Q17>Merge Sort</Answer5Q17>
+    <Answer6Q17>Bucket Sort</Answer6Q17>
+    <Answer7Q17>Selection Sort</Answer7Q17>
+  </Question>
+  <Question id="Q4">
+    <QuestionText>Care din urmatoarele figuri au toate laturile egale ?</QuestionText>
+    <Answer1Q4>Triunghiul dreptunghic</Answer1Q4>
+    <Answer2Q4>Triunghiul isoscel</Answer2Q4>
+    <Answer3Q4>Triunghiul echilateral</Answer3Q4>
+    <Answer4Q4>Patratul</Answer4Q4>
+    <Answer5Q4>Rombul</Answer5Q4>
+    <Answer6Q4>Dreptunghiul</Answer6Q4>
+    <Answer7Q4>Hexagonul neregulat</Answer7Q4>
+  </Question>
+  <Question id="Q14">
+    <QuestionText>Cine a fost Alexandru Ioan Cuza ?</QuestionText>
+    <Answer1Q14>a fost primul domnitor al Principatelor Unite si al statului national Romania</Answer1Q14>
+    <Answer2Q14>un om inrobit de doua patimi Iubirea pentru patrie si cea pentru femei frumoase</Answer2Q14>
+    <Answer3Q14>un om pasionat de cai</Answer3Q14>
+    <Answer4Q14>un pictor roman</Answer4Q14>
+    <Answer5Q14>primul scriitor de opera literara</Answer5Q14>
+    <Answer6Q14>a fost ultimul domnitor al Principatelor Unite si al statului national Romania</Answer6Q14>
+    <Answer7Q14>un domnitor roman nascut in anul 1820</Answer7Q14>
+    <Answer8Q14>un domnitor roman nascut in anul 1859</Answer8Q14>
+    <Answer9Q14>Domnitor in 1859-1866</Answer9Q14>
+  </Question>
+  <Question id="Q10">
+    <QuestionText>Cate litere are alfabetul roman?</QuestionText>
+    <Answer1Q10>26</Answer1Q10>
+    <Answer2Q10>31</Answer2Q10>
+    <Answer3Q10>Ce e asta?</Answer3Q10>
+    <Answer4Q10>26.5</Answer4Q10>
+    <Answer5Q10>-12</Answer5Q10>
+    <Answer6Q10>Pe toate.</Answer6Q10>
+  </Question>
+  <Problem id="P2">
+    <ProblemText>Se dau numerele naturale n și k, unde k este o cifră. Să se verifice dacă toate cifrele lui n sunt mai mici sau egale decât k.</ProblemText>
+  </Problem>
+  <Problem id="P1">
+    <ProblemText>Să se scrie un program care citește numărul natural n și determină suma S=1+1*2+1*2*3+...+1*2*...*n.</ProblemText>
+  </Problem>
+</Test>
+

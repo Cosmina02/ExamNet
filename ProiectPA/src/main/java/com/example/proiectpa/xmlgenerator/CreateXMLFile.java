@@ -33,13 +33,10 @@ public class CreateXMLFile {
                         doc.getRootElement().addContent(createQuestionXMLElement(question.getId(), question.getQuestion_text(), question.getAnswears()));
                     }
                 }
-
-
             }
             XMLOutputter xmlOutput = new XMLOutputter();
-
             xmlOutput.setFormat(Format.getPrettyFormat());
-            xmlOutput.output(doc, new FileWriter("test.xml"));
+            xmlOutput.output(doc, new FileWriter("src/main/resources/templates/generate/xml/test.xml"));
             System.out.println("File Saved!");
 
         } catch (IOException e) {
@@ -72,24 +69,27 @@ public class CreateXMLFile {
             doc.setRootElement(new Element("TestAnswears"));
             ArrayList<Answears> answears;
             for (Questions question : questions) {
-                if(question.getId().equals("Problem")){
-                    System.out.println("problem");
-                    ArrayList<Problems> problems=question.getProblems();
-                    int p=1;
-                    for(Problems problems1:problems){
-                        doc.getRootElement().addContent( createProblemAnswearXMLElement(problems1.getId(), problems1.getText_problema(),answear,p ));
-                        p++;
+                if(question.getId()!=null){
+                    if(question.getId().equals("Problem")){
+                        System.out.println("problem");
+                        ArrayList<Problems> problems=question.getProblems();
+                        int p=1;
+                        for(Problems problems1:problems){
+                            doc.getRootElement().addContent( createProblemAnswearXMLElement(problems1.getId(), problems1.getText_problema(),answear,p ));
+                            p++;
+                        }
+                    }
+                    else{
+                        doc.getRootElement().addContent(createAnswearXMLElement(question.getId(), question.getQuestion_text(), question.getAnswears(), answear));
                     }
                 }
-                else{
-                    doc.getRootElement().addContent(createAnswearXMLElement(question.getId(), question.getQuestion_text(), question.getAnswears(), answear));
-                }
+
 
             }
             XMLOutputter xmlOutput = new XMLOutputter();
             xmlOutput.setFormat(Format.getPrettyFormat());
 
-            xmlOutput.output(doc, new FileWriter("answears.xml"));
+            xmlOutput.output(doc, new FileWriter("src/main/resources/templates/generate/xml/answears.xml"));
         } catch (IOException e) {
             e.printStackTrace();
         }
