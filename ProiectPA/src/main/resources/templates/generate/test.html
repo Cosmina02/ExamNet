@@ -101,12 +101,13 @@
         </li>
     </ul>
     <p th:text="${problema1}"></p>
-    <input type="text"/>
+    <!--/*@thymesVar id="id" type=""*/-->
+    <input name="question"  type="text"/>
 
     <p th:text="${problema2}"></p>
-    <input type="text"/>
+    <input name="question"  type="text"/>
 
-    <input type="submit" name="Submit your answears"/>
+    <input type="submit"  name="Submit your answears"/>
 </form>
 </body>
 </html>
