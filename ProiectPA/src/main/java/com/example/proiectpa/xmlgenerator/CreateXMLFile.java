@@ -2,6 +2,8 @@ package com.example.proiectpa.xmlgenerator;
 
 import com.example.proiectpa.DBInteraction.DBConnection;
 import com.example.proiectpa.DBInteraction.Queries;
+import com.example.proiectpa.controllers.Answears;
+import com.example.proiectpa.controllers.Questions;
 import org.jdom.Attribute;
 import org.jdom.Document;
 import org.jdom.Element;
@@ -13,38 +15,38 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CreateXMLFile {
-    public static void generateXML(){
+    public static void generateTestXML(ArrayList<Questions> QuestionsInTest){
         try{
-            DBConnection dbconn=DBConnection.getInstance("./DataBase/database.db");
-            Queries query=new Queries();
+
             Document doc=new Document();
             doc.setRootElement(new Element("Test"));
-            doc.getRootElement().addContent(createQuestionXMLElement("1",query.GetQuestion(dbconn,"Q1"), query.GetAnswers(dbconn,"Q1")));
-            doc.getRootElement().addContent(createQuestionXMLElement("2", query.GetQuestion(dbconn,"Q5"), query.GetAnswers(dbconn,"Q5")));
-            doc.getRootElement().addContent(createQuestionXMLElement("3", query.GetQuestion(dbconn,"Q9"),query.GetAnswers(dbconn,"Q9")));
-            doc.getRootElement().addContent(createQuestionXMLElement("4", query.GetQuestion(dbconn,"Q23"),query.GetAnswers(dbconn,"Q23") ));
+            for(Questions question: QuestionsInTest){
+                doc.getRootElement().addContent(createQuestionXMLElement(question.getId(), question.getQuestion_text(),question.getAnswears()));
+            }
             XMLOutputter xmlOutput= new XMLOutputter();
 
             xmlOutput.setFormat(Format.getPrettyFormat());
-            xmlOutput.output(doc,new FileWriter("test1.txt"));
+            xmlOutput.output(doc,new FileWriter("test.xml"));
             System.out.println("File Saved!");
 
-        } catch (IOException | SQLException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
     }
-    private static Element createQuestionXMLElement(String id, ResultSet questionResult, ResultSet answerResult) throws SQLException {
+    private static Element createQuestionXMLElement(String id, String question_text, ArrayList<Answears> answears){
         Element question = new Element("Question");
         question.setAttribute(new Attribute("id", id));
-        question.addContent(new Element("QuestionText").setText(questionResult.getString("TEXT_INTREBARE")));
-        int Aid=0;
-        while(answerResult.next()){
-            Aid++;
-            question.addContent(new Element("Answer"+Aid).setText(answerResult.getString("TEXT_RASPUNS")));
+        question.addContent(new Element("QuestionText").setText(question_text));
+        for( Answears answear:answears){
+            question.addContent(new Element("Answer"+answear.id).setText(answear.answear_text));
         }
         return question;
     }
+
+
 }

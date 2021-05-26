@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Test>
+  <Question id="Q11">
+    <QuestionText>Cine a inventat Git?</QuestionText>
+    <Answer1Q11>Linus Torvalds</Answer1Q11>
+    <Answer2Q11>Github</Answer2Q11>
+    <Answer3Q11>Bill Gates</Answer3Q11>
+    <Answer4Q11>Dennis Ritchie</Answer4Q11>
+    <Answer5Q11>RMS</Answer5Q11>
+    <Answer6Q11>Microsoft</Answer6Q11>
+  </Question>
+  <Question id="Q5">
+    <QuestionText>Care din urmatoarele sunt numere prime ?</QuestionText>
+    <Answer1Q5>3</Answer1Q5>
+    <Answer2Q5>7</Answer2Q5>
+    <Answer3Q5>5</Answer3Q5>
+    <Answer4Q5>13</Answer4Q5>
+    <Answer5Q5>17</Answer5Q5>
+    <Answer6Q5>9</Answer6Q5>
+    <Answer7Q5>16</Answer7Q5>
+    <Answer8Q5>22</Answer8Q5>
+    <Answer9Q5>121</Answer9Q5>
+    <Answer10Q5>14</Answer10Q5>
+  </Question>
+  <Question id="Q8">
+    <QuestionText>Care flori sunt sau pot fi albe ?</QuestionText>
+    <Answer1Q8>Ghiocelul</Answer1Q8>
+    <Answer2Q8>Margareta</Answer2Q8>
+    <Answer3Q8>Trandafirul</Answer3Q8>
+    <Answer4Q8>Floarea de soc</Answer4Q8>
+    <Answer5Q8>Papadia</Answer5Q8>
+    <Answer6Q8>Floarea de cires</Answer6Q8>
+    <Answer7Q8>Crinul</Answer7Q8>
+    <Answer8Q8>Bumbisorul</Answer8Q8>
+    <Answer9Q8>Floarea soarelui</Answer9Q8>
+  </Question>
+  <Question id="Q18">
+    <QuestionText>Care dintre urmatoarele raspunsuri sunt limbaje de programare?</QuestionText>
+    <Answer1Q18>HTML</Answer1Q18>
+    <Answer2Q18>C</Answer2Q18>
+    <Answer3Q18>CSS</Answer3Q18>
+    <Answer4Q18>Java</Answer4Q18>
+    <Answer5Q18>C#</Answer5Q18>
+    <Answer6Q18>C++</Answer6Q18>
+    <Answer7Q18>Python</Answer7Q18>
+    <Answer8Q18>Semnelor</Answer8Q18>
+    <Answer9Q18>Autostopul</Answer9Q18>
+  </Question>
+  <Question id="Q14">
+    <QuestionText>Cine a fost Alexandru Ioan Cuza ?</QuestionText>
+    <Answer1Q14>a fost primul domnitor al Principatelor Unite si al statului national Romania</Answer1Q14>
+    <Answer2Q14>un om inrobit de doua patimi Iubirea pentru patrie si cea pentru femei frumoase</Answer2Q14>
+    <Answer3Q14>un om pasionat de cai</Answer3Q14>
+    <Answer4Q14>un pictor roman</Answer4Q14>
+    <Answer5Q14>primul scriitor de opera literara</Answer5Q14>
+    <Answer6Q14>a fost ultimul domnitor al Principatelor Unite si al statului national Romania</Answer6Q14>
+    <Answer7Q14>un domnitor roman nascut in anul 1820</Answer7Q14>
+    <Answer8Q14>un domnitor roman nascut in anul 1859</Answer8Q14>
+    <Answer9Q14>Domnitor in 1859-1866</Answer9Q14>
+  </Question>
+  <Question id="Q19">
+    <QuestionText>Care dintre variante reprezinta un cuvant intalnit des din domeniul informaticii?</QuestionText>
+    <Answer1Q19>Byte</Answer1Q19>
+    <Answer2Q19>Eroare</Answer2Q19>
+    <Answer3Q19>Aplicatie</Answer3Q19>
+    <Answer4Q19>Spatiu</Answer4Q19>
+    <Answer5Q19>Timp</Answer5Q19>
+    <Answer6Q19>Volum</Answer6Q19>
+    <Answer7Q19>Acid Ribonucleic</Answer7Q19>
+    <Answer8Q19>Restanta</Answer8Q19>
+    <Answer9Q19>Arsen</Answer9Q19>
+    <Answer10Q19>Impedanta</Answer10Q19>
+  </Question>
+  <Question id="Q7">
+    <QuestionText>Care din urmatoarele numere sunt din sirul lui Fibonacci ?</QuestionText>
+    <Answer1Q7>1</Answer1Q7>
+    <Answer2Q7>2</Answer2Q7>
+    <Answer3Q7>3</Answer3Q7>
+    <Answer4Q7>5</Answer4Q7>
+    <Answer5Q7>8</Answer5Q7>
+    <Answer6Q7>13</Answer6Q7>
+    <Answer7Q7>21</Answer7Q7>
+    <Answer8Q7>22</Answer8Q7>
+    <Answer9Q7>23</Answer9Q7>
+  </Question>
+  <Question id="Q10">
+    <QuestionText>Cate litere are alfabetul roman?</QuestionText>
+    <Answer1Q10>26</Answer1Q10>
+    <Answer2Q10>31</Answer2Q10>
+    <Answer3Q10>Ce e asta?</Answer3Q10>
+    <Answer4Q10>26.5</Answer4Q10>
+    <Answer5Q10>-12</Answer5Q10>
+    <Answer6Q10>Pe toate.</Answer6Q10>
+  </Question>
+  <Question id="Q7">
+    <QuestionText>Care din urmatoarele numere sunt din sirul lui Fibonacci ?</QuestionText>
+    <Answer1Q7>1</Answer1Q7>
+    <Answer2Q7>2</Answer2Q7>
+    <Answer3Q7>3</Answer3Q7>
+    <Answer4Q7>5</Answer4Q7>
+    <Answer5Q7>8</Answer5Q7>
+    <Answer6Q7>13</Answer6Q7>
+    <Answer7Q7>21</Answer7Q7>
+    <Answer8Q7>22</Answer8Q7>
+    <Answer9Q7>23</Answer9Q7>
+  </Question>
+  <Question id="Q20">
+    <QuestionText>Ce are C++ si nu are C?</QuestionText>
+    <Answer1Q20>Clase</Answer1Q20>
+    <Answer2Q20>Clase</Answer2Q20>
+    <Answer3Q20>namespace-ul std</Answer3Q20>
+    <Answer4Q20>Obiecte POO</Answer4Q20>
+    <Answer5Q20>Functii repetitive</Answer5Q20>
+    <Answer6Q20>Declarari</Answer6Q20>
+  </Question>
+</Test>
+

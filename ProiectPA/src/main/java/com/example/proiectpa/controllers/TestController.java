@@ -2,9 +2,12 @@ package com.example.proiectpa.controllers;
 
 import com.example.proiectpa.DBInteraction.DBConnection;
 import com.example.proiectpa.DBInteraction.Queries;
+import com.example.proiectpa.xmlgenerator.CreateXMLFile;
 import org.jdom.Element;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,12 +16,13 @@ import org.springframework.web.servlet.ModelAndView;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 @Controller
-@RequestMapping("generate")
+@RequestMapping("/generate")
 public class TestController {
- static int nrOfQuestions;
+ ArrayList<Questions> QuestionsInTest=new ArrayList<>();
     DBConnection dbconn=DBConnection.getInstance("./DataBase/database.db");
     Queries query=new Queries();
     @RequestMapping(value="",method= RequestMethod.GET)
@@ -28,10 +32,16 @@ public class TestController {
     }
 
 @RequestMapping(value="",method=RequestMethod.POST)
-    public ModelAndView processNrOfQuestionsForm( ModelAndView model) throws SQLException {
-       // nrOfQuestions=Integer.parseInt(NrOfQuestions);
+    public String processNrOfQuestionsForm( ModelAndView model) throws SQLException {
+
+    return "redirect:/generate/test";
+    }
+
+
+    @RequestMapping(value="/test",method=RequestMethod.GET)
+    public ModelAndView  processTestAnswears(ModelAndView model) throws SQLException {
         Random rand=new Random();
-         model.setViewName("/generate/test");
+        model.setViewName("/generate/test");
         for(int i=1;i<=10;i++){
             int r=rand.nextInt(23);
             if(r==0){
@@ -39,22 +49,27 @@ public class TestController {
             }
             Questions questions=new Questions();
             ResultSet question=query.GetQuestion(dbconn,"Q"+r);
-                if(question.next()){
-                    questions.setQuestion_text(question.getString("TEXT_INTREBARE"));
-                    String dom=question.getString("DOMENIU");
-                    String id=question.getString("ID");
+            if(question.next()){
+                questions.setQuestion_text(question.getString("TEXT_INTREBARE"));
+                String dom=question.getString("DOMENIU");
+                questions.setId(question.getString("ID"));
+            }
+            ArrayList<Answears> ans=new ArrayList<>();
 
-                }
-                System.out.println(questions.getQuestion_text());
-                ArrayList<String>ans=new ArrayList<>();
-                ResultSet answers= query.GetAnswers(dbconn,"Q"+r);
-                while(answers.next()){
-                    ans.add(answers.getString("TEXT_RASPUNS"));
-                }
-                questions.setAnswears(ans);
+            ResultSet answers= query.GetAnswers(dbconn,"Q"+r);
+            int id=1;
+            while(answers.next()){
+                Answears currentAnswear=new Answears();
+                currentAnswear.setAnswear_text(answers.getString("TEXT_RASPUNS"));
+                currentAnswear.setId(String.valueOf(id)+"Q"+r);
+                id++;
+                ans.add(currentAnswear);
+            }
+            questions.setAnswears(ans);
+            QuestionsInTest.add(questions);
 
             model.addObject("questions"+i,questions);
-       }
+        }
         for(int i=1;i<=2;i++){
             int r=rand.nextInt(6);
             if(r==0){
@@ -71,7 +86,22 @@ public class TestController {
             model.addObject("problema"+i,text);
         }
 
-       // System.out.println(nrOfQuestions);
+        // System.out.println(nrOfQuestions);
+        CreateXMLFile.generateTestXML(QuestionsInTest);
+        System.out.println(QuestionsInTest);
         return model;
     }
+
+    @RequestMapping(value="/test",method = RequestMethod.POST)
+    public String processAnswears(@RequestParam List<String> question){
+        List<String> answears=question;
+        System.out.println(answears);
+       return "redirect:/generate/succes";
+    }
+
+    @RequestMapping(value="/succes")
+    public String getSucces(){
+        return "generate/succes";
+    }
+
 }

@@ -13,8 +13,8 @@
     <ul>
 
         <li th:each="answear1 : ${questions1.answears}">
-            <input name="question1" type="checkbox"/>
-            <label th:text="${answear1}">  </label>
+            <input  name="question" th:value="${answear1.id}" type="checkbox"/>
+            <label th:text="${answear1.answear_text}">  </label>
         </li>
     </ul>
 
@@ -23,8 +23,8 @@
 
         <li th:each="answear2 : ${questions2.answears}">
             <!--/*@thymesVar id="answear" type=""*/-->
-            <input  type="checkbox"/>
-            <label th:text="${answear2}">  </label>
+            <input name="question" th:value="${answear2.id}" type="checkbox"/>
+            <label th:text="${answear2.answear_text}">  </label>
         </li>
     </ul>
     <p th:each="question3:${questions3}" th:text="${question3.question_text}"></p>
@@ -32,8 +32,8 @@
 
         <li th:each="answear3 : ${questions3.answears}">
             <!--/*@thymesVar id="answear" type=""*/-->
-            <input  type="checkbox"/>
-            <label th:text="${answear3}">  </label>
+            <input name="question" th:value="${answear3.id}" type="checkbox"/>
+            <label th:text="${answear3.answear_text}">  </label>
         </li>
     </ul>
     <p th:each="question4:${questions4}" th:text="${question4.question_text}"></p>
@@ -41,8 +41,8 @@
 
         <li th:each="answear4 : ${questions4.answears}">
             <!--/*@thymesVar id="answear" type=""*/-->
-            <input  type="checkbox"/>
-            <label th:text="${answear4}">  </label>
+            <input name="question" th:value="${answear4.id}" type="checkbox"/>
+            <label th:text="${answear4.answear_text}">  </label>
         </li>
     </ul>
     <p th:each="question5:${questions5}" th:text="${question5.question_text}"></p>
@@ -50,8 +50,8 @@
 
         <li th:each="answear5 : ${questions5.answears}">
             <!--/*@thymesVar id="answear" type=""*/-->
-            <input  type="checkbox"/>
-            <label th:text="${answear5}">  </label>
+            <input name="question" th:value="${answear5.id}" type="checkbox"/>
+            <label th:text="${answear5.answear_text}">  </label>
         </li>
     </ul>
     <p th:each="question6:${questions6}" th:text="${question6.question_text}"></p>
@@ -59,8 +59,8 @@
 
         <li th:each="answear6 : ${questions6.answears}">
             <!--/*@thymesVar id="answear" type=""*/-->
-            <input  type="checkbox"/>
-            <label th:text="${answear6}">  </label>
+            <input name="question" th:value="${answear6.id}" type="checkbox"/>
+            <label th:text="${answear6.answear_text}">  </label>
         </li>
     </ul>
     <p th:each="question7:${questions7}" th:text="${question7.question_text}"></p>
@@ -68,8 +68,8 @@
 
         <li th:each="answear7 : ${questions7.answears}">
             <!--/*@thymesVar id="answear" type=""*/-->
-            <input  type="checkbox"/>
-            <label th:text="${answear7}">  </label>
+            <input name="question" th:value="${answear7.id}" type="checkbox"/>
+            <label th:text="${answear7.answear_text}">  </label>
         </li>
     </ul>
     <p th:each="question8:${questions8}" th:text="${question8.question_text}"></p>
@@ -77,8 +77,8 @@
 
         <li th:each="answear8 : ${questions8.answears}">
             <!--/*@thymesVar id="answear" type=""*/-->
-            <input  type="checkbox"/>
-            <label th:text="${answear8}">  </label>
+            <input name="question" th:value="${answear8.id}" type="checkbox"/>
+            <label th:text="${answear8.answear_text}">  </label>
         </li>
     </ul>
 
@@ -87,8 +87,8 @@
 
         <li th:each="answear9 : ${questions9.answears}">
             <!--/*@thymesVar id="answear" type=""*/-->
-            <input  type="checkbox"/>
-            <label th:text="${answear9}">  </label>
+            <input name="question" th:value="${answear9.id}" type="checkbox"/>
+            <label th:text="${answear9.answear_text}">  </label>
         </li>
     </ul>
     <p th:each="question10:${questions10}" th:text="${question10.question_text}"></p>
@@ -96,8 +96,8 @@
 
         <li th:each="answear10 : ${questions10.answears}">
             <!--/*@thymesVar id="answear" type=""*/-->
-            <input  type="checkbox"/>
-            <label th:text="${answear10}">  </label>
+            <input name="question" th:value="${answear10.id}" type="checkbox"/>
+            <label th:text="${answear10.answear_text}">  </label>
         </li>
     </ul>
     <p th:text="${problema1}"></p>

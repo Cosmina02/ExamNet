@@ -4,7 +4,16 @@ import java.util.ArrayList;
 
 public class Questions {
     String question_text;
-    ArrayList<String> answears;
+    String id;
+    ArrayList<Answears> answears;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getQuestion_text() {
         return question_text;
@@ -14,11 +23,20 @@ public class Questions {
         this.question_text = question_text;
     }
 
-    public ArrayList<String> getAnswears() {
+    public ArrayList<Answears> getAnswears() {
         return answears;
     }
 
-    public void setAnswears(ArrayList<String> answears) {
+    public void setAnswears(ArrayList<Answears> answears) {
         this.answears = answears;
+    }
+
+    @Override
+    public String toString() {
+        return "Questions{" +
+                "question_text='" + question_text + '\'' +
+                ", id='" + id + '\'' +
+                ", answears=" + answears +
+                "}\n";
     }
 }
