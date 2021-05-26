@@ -29,7 +29,7 @@ public class TestController {
 
     @RequestMapping(value = "", method = RequestMethod.GET)
     public String index(Model model) {
-        model.addAttribute("title", "Nr of test Questions");
+        model.addAttribute("title", "Generate your test");
         return "generate/index";
     }
 

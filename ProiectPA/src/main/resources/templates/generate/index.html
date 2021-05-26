@@ -2,6 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head>
     <meta charset="UTF-8"/>
+    <link th:href="@{/styles/styles.css}" rel="stylesheet">
     <title th:text="${title}">Title</title>
 </head>
 <body>
@@ -9,8 +10,7 @@
     <h2>Click the button below to get your test</h2>
     <h3>The test will have 10 grid questions and 2 problems</h3>
 <form method="post" >
-  <!--  <input type="number" name="NrOfQuestions"/>-->
-    <input type="submit" value="Get Questions" th:href="@{/generate/test}"/>
+    <input type="submit" class="subm" value="Get Questions" th:href="@{/generate/test}"/>
 </form>
 </body>
 </html>

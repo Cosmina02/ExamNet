@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
+    <link th:href="@{/styles/styles.css}" rel="stylesheet">
     <title>Title</title>
 </head>
 <body>
 <h1>This is your test</h1>
-<form method="post">
+<form class="formular" method="post">
 
 
     <p th:each="question1:${questions1}" th:text="${question1.question_text}" name="question1"></p>
@@ -102,12 +103,12 @@
     </ul>
     <p th:text="${problema1}"></p>
     <!--/*@thymesVar id="id" type=""*/-->
-    <input name="question"  type="text"/>
+    <input class="problem_input" name="question"  type="text"/>
 
     <p th:text="${problema2}"></p>
-    <input name="question"  type="text"/>
-
-    <input type="submit"  name="Submit your answears"/>
+    <input class="problem_input" name="question"  type="text"/>
+<br>
+    <input class="subm" type="submit"  name="Submit your answears" value="Submit your answears"/>
 </form>
 </body>
 </html>

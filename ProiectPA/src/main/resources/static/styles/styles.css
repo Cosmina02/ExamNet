@@ -1,0 +1,44 @@
+font{
+    font-family: "Arial Black";
+}
+body{
+    font-family: "Arial Black";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formular {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 1em;
+}
+label {
+    align-self: flex-start;
+    font-size: 1em;
+    padding: 1em 1em 1em 4.5em;
+}
+.problem_input{
+    width:500px;
+    height: 200px;
+}
+.subm{
+    align-self: center;
+    color:black;
+    background-color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    padding-left: 2.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 2.5em;
+    border: none;
+    font-size: 2em;
+    border-radius: 45px;
+    margin-top: 0.5em;
+}
+.subm:hover {
+    color: white;
+    background-color: black;
+    box-shadow: 0px 8px 15px #f78888a6;
+}

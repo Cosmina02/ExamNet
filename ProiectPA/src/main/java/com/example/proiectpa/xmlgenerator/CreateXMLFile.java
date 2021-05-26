@@ -22,15 +22,18 @@ public class CreateXMLFile {
             Document doc = new Document();
             doc.setRootElement(new Element("Test"));
             for (Questions question : QuestionsInTest) {
-                if (question.getId().equals("Problem")) {
-                   //System.out.println("am gasit o problema");
-                    ArrayList<Problems> problems=question.getProblems();
-                    for(Problems problems1:problems){
-                        doc.getRootElement().addContent( createProblemXMLElement(problems1));
+                if(question.getId()!=null){
+                    if (question.getId().equals("Problem")) {
+                        //System.out.println("am gasit o problema");
+                        ArrayList<Problems> problems = question.getProblems();
+                        for (Problems problems1 : problems) {
+                            doc.getRootElement().addContent(createProblemXMLElement(problems1));
+                        }
+                    } else {
+                        doc.getRootElement().addContent(createQuestionXMLElement(question.getId(), question.getQuestion_text(), question.getAnswears()));
                     }
-                } else {
-                    doc.getRootElement().addContent(createQuestionXMLElement(question.getId(), question.getQuestion_text(), question.getAnswears()));
                 }
+
 
             }
             XMLOutputter xmlOutput = new XMLOutputter();
@@ -86,7 +89,7 @@ public class CreateXMLFile {
             XMLOutputter xmlOutput = new XMLOutputter();
             xmlOutput.setFormat(Format.getPrettyFormat());
 
-            xmlOutput.output(doc, new FileWriter("ans.xml"));
+            xmlOutput.output(doc, new FileWriter("answears.xml"));
         } catch (IOException e) {
             e.printStackTrace();
         }
